@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>/// S.H.I.E.L.D. - ACCESO RESTRINGIDO ///</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<div class="login-screen" id="loginScreen">
+  <div class="terminal">
+    <div class="terminal-header">
+      <span class="red-dot"></span>
+      <span class="yellow-dot"></span>
+      <span class="green-dot"></span>
+      <span class="title">S.H.I.E.L.D. TERMINAL v3.1.4</span>
+    </div>
+    <div class="terminal-body">
+      <p class="typewriter">> Inicializando sistema de seguridad...</p>
+      <p class="typewriter delay-1">> Verificando credenciales...</p>
+      <p class="typewriter delay-2">> ¿DESEA ACCEDER A ARCHIVOS CLASIFICADOS?</p>
+      <div class="access-control">
+        <div class="lock-container">
+          <i class="fas fa-lock"></i>
+          <div class="lock-shadow"></div>
+        </div>
+        <button class="access-btn" id="accessBtn">
+          <span>CONFIRMAR IDENTIDAD</span>
+          <i class="fas fa-fingerprint"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container" id="mainContainer" style="display: none;">
+  <div class="classified-header">
+    <div class="classified-stamps">
+      <span class="stamp top-secret">TOP SECRET</span>
+      <span class="stamp eyes-only">EYES ONLY</span>
+    </div>
+    <h1>/// ARCHIVO SECRETO S.H.I.E.L.D. ///</h1>
+    <div class="clearance-level">
+      <span>NIVEL 5 DE SEGURIDAD</span>
+    </div>
+  </div>
+
+  <div class="hero-selector">
+    <button class="hero-btn" data-hero="voltman">
+      <i class="fas fa-bolt"></i> VOLTMAN
+    </button>
+    <button class="hero-btn" data-hero="shadowcat">
+      <i class="fas fa-cat"></i> SHADOWCAT
+    </button>
+    <button class="hero-btn" data-hero="titan">
+      <i class="fas fa-shield-alt"></i> TITAN
+    </button>
+  </div>
+
+  <div class="card" id="superheroCard" style="display: none;">
+    <div class="classified-banner">CLASIFICADO - Nivel 5</div>
+    <div class="card-header">
+      <h2 id="heroName"></h2>
+      <div class="status-light"></div>
+    </div>
+    <div class="card-content" id="heroContent"></div>
+    <div class="watermark">CONFIDENCIAL</div>
+  </div>
+
+  <div class="footer-note">
+    <p>Este documento contiene información clasificada bajo el Acta de Seguridad Superhumana</p>
+    <p>Divulgación no autorizada será castigada según el Código Penal Sección 17.3</p>
+  </div>
+</div>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>

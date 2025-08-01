@@ -1,0 +1,27 @@
+# Ignorar configuración de WebStorm/IDEA
+.idea/
+
+# Ignorar archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar carpetas comunes de despliegue o construcción
+dist/
+build/
+node_modules/
+
+# Ignorar archivos del navegador (caché o bases de datos locales)
+*.log
+*.sqlite
+*.db
+*.cache
+
+# Ignorar carpetas ocultas creadas por MacOS
+._*
+.Spotlight-V100
+.Trashes
+
+# Ignorar archivos ZIP o comprimidos generados
+*.zip
+*.rar
+*.tar.gz
