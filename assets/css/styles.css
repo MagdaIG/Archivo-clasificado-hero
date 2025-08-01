@@ -293,3 +293,27 @@ h1 {
 .security-alert {
   margin: 0 auto;
 }
+
+.footer-secure {
+  background-color: #0a0a12;
+  padding: 20px;
+  text-align: center;
+  color: var(--neon-green);
+  font-size: 0.75rem;
+  border-top: 1px dashed #222;
+  box-shadow: 0 -3px 10px rgba(0, 255, 157, 0.1);
+  margin-top: 40px;
+  letter-spacing: 1px;
+}
+
+.footer-secure .footer-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.footer-secure .auth-code {
+  color: var(--neon-pink);
+  font-weight: bold;
+  text-shadow: 0 0 5px var(--neon-pink);
+}
